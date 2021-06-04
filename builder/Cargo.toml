@@ -8,6 +8,10 @@ publish = false
 [lib]
 proc-macro = true
 
+# [[bin]]
+# name = "06-optional-field"
+# path = "tests/06-optional-field.rs"
+
 [[test]]
 name = "tests"
 path = "tests/progress.rs"
@@ -17,3 +21,8 @@ trybuild = { version = "1.0", features = ["diff"] }
 
 [dependencies]
 # TODO
+syn = { version = "1.0.72", features = ["full", "extra-traits"] }
+quote = "1.0.9"
+itertools = "0.10.0"
+proc-macro2 = "1.0.27"
+anyhow = "1.0.40"
